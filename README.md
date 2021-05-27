@@ -9,6 +9,10 @@ This project was my first attempt at building a react project. The goal was to w
 3. Run npm install to install dependencies
 4. Run npm start to view app in your localhost
 
+## Used Technologies
+
+- Css & React
+
 ## Process Work
 
 1. I started by creating a Calculator class and determing what state attributes I needed to track. Since I wanted to be able to calculate numbers I knew I needed to track:
