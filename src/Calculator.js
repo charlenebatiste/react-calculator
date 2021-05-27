@@ -77,13 +77,13 @@ class Calculator extends Component{
             <input type="number" value={this.state.inputOne} onChange={ (e) => this.setNum(e, 'inputOne') }/>
             <div className="calculateButtons">
                   <button value='add' onClick={ (e) => this.setOperator(e, 'operator')}> + </button>
-                  <button value='subtract' onClick={ (e) => this.setOperator(e, 'operator')}> - </button>
-                  <button value='multiply' onClick={ (e) => this.setOperator(e, 'operator')}> * </button>
-                  <button value='divide' onClick={ (e) => this.setOperator(e, 'operator')}> / </button>
+                  <button value='subtract' onClick={ (e) => this.setOperator(e, 'operator')}> &minus; </button>
+                  <button value='multiply' onClick={ (e) => this.setOperator(e, 'operator')}> &times; </button>
+                  <button value='divide' onClick={ (e) => this.setOperator(e, 'operator')}> &divide; </button>
             </div>
             <input type="number"  value={this.state.inputTwo} onChange={ (e) => this.setNum(e, 'inputTwo') }/>
             <div className="calculateButtons">
-              <button onClick={this.calculate}>=</button>
+              <button class="submit" onClick={this.calculate}>Calculate</button>
             </div>
           </div>
           <div>
