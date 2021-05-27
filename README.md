@@ -2,6 +2,13 @@
 
 This project was my first attempt at building a react project. The goal was to work on creating responsive elements and rendering them inside of a class component
 
+## Set Up
+
+1. Fork and Clone this respository to your local machine
+2. Open the directory in your text editor of choice to view or edit the code
+3. Run npm install to install dependencies
+4. Run npm start to view app in your localhost
+
 ## Process Work
 
 1. I started by creating a Calculator class and determing what state attributes I needed to track. Since I wanted to be able to calculate numbers I knew I needed to track:
