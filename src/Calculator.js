@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
 class Calculator extends Component{
 
   state={
@@ -36,33 +35,37 @@ class Calculator extends Component{
 
   addNumbers = () => {
     // console.log(`you want to add ${this.state.inputOne} and ${this.state.inputTwo}?`);
-    let yourTotal = parseInt(this.state.inputOne) + parseInt(this.state.inputTwo);
+    let yourTotal = Number(this.state.inputOne) + Number(this.state.inputTwo);
     // console.log(yourTotal);
     this.setState({
+      operator: '', 
       inputOne: '',
       inputTwo: '',
       total: yourTotal
     })
   }
   subtractNumbers = () => {
-    let yourTotal = parseInt(this.state.inputOne) - parseInt(this.state.inputTwo);
+    let yourTotal = Number(this.state.inputOne) - Number(this.state.inputTwo);
     this.setState({
+      operator: '', 
       inputOne: '',
       inputTwo: '',
       total: yourTotal
     })
   }
   multiplyNumbers = () => {
-    let yourTotal = parseInt(this.state.inputOne) * parseInt(this.state.inputTwo);
+    let yourTotal = Number(this.state.inputOne) * Number(this.state.inputTwo);
     this.setState({
+      operator: '', 
       inputOne: '',
       inputTwo: '',
       total: yourTotal
     })
   }
   divideNumbers = () => {
-    let yourTotal = parseInt(this.state.inputOne) / parseInt(this.state.inputTwo);
+    let yourTotal = Number(this.state.inputOne) / Number(this.state.inputTwo);
     this.setState({
+      operator: '', 
       inputOne: '',
       inputTwo: '',
       total: yourTotal
